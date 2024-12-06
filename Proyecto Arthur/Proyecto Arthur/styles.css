@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('ARTHURMORGAN.png') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.header .button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.header .button:hover {
+    background-color: #218838;
+}
+
+main {
+    padding: 20px;
+}
+
+.about, .menu, .hours {
+    margin-bottom: 40px;
+}
+
+.about h2, .menu h2, .hours h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #28a745;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-item {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.menu-item p {
+    margin-bottom: 0;
+    color: #666;
+}
+
+.hours p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.day {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.day h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #28a745; /* Color consistente con el diseño */
+}
+
+.day p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.day:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+    .calendar {
+        grid-template-columns: 1fr; /* Una columna para pantallas pequeñas */
+    }
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%; /* Asegura que no se desborde */
+}
+
+.map-container iframe {
+    border: 0;
+    max-width: 100%; /* Responsivo en pantallas más pequeñas */
+    height: auto;
+}
+
+.about, .menu, .hours, .location {
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.about h2, .menu h2, .hours h2, .location h2 {
+    margin-bottom: 15px; /* Ajusta el espacio debajo de los títulos */
+    text-align: center; /* Centra los títulos */
+}
+
+.about p, .menu-items, .hours p, .location p {
+    text-align: center; /* Asegura que los párrafos y elementos secundarios estén centrados */
+    margin: 0 auto;
+}
+
+.menu-items {
+    justify-content: center; /* Centra el menú de comidas horizontalmente */
+}

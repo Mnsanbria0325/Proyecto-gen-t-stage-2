@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a Arthur Morgan</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .menu-item img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+        }
+
+        .menu-item img:hover {
+            transform: scale(1.2); /* Agranda la imagen suavemente */
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Arthur Morgan</h1>
+        <p>El mejor restaurante para disfrutar del auténtico sabor.</p>
+        <a href="reservas.html" class="button">Hacer una Reserva</a>
+    </header>
+    <main>
+        <section class="about">
+            <h2>Sobre Nosotros</h2>
+            <p>En <b>Arthur Morgan</b>, nos especializamos en ofrecer comida deliciosa con ingredientes frescos y un ambiente acogedor. ¡Ven a visitarnos y vive una experiencia culinaria inolvidable!</p>
+        </section>
+        <section class="menu">
+            <h2>Menú Destacado</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="pollo-asado.jpg" alt="Pollo Asado Especial">
+                    <h3>Pollo Asado Especial</h3>
+                    <p>El clásico que nunca falla, servido con guarnición.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="hamburguesa.jpg" alt="Hamburguesa de Pollo">
+                    <h3>Hamburguesa de Pollo</h3>
+                    <p>Jugosa hamburguesa con pollo fresco y salsas especiales.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="ensalada-cesar.jpg" alt="Ensalada César">
+                    <h3>Ensalada César</h3>
+                    <p>Fresca y saludable, ideal para acompañar cualquier plato.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="tacos.jpg" alt="Tacos de Pollo">
+                    <h3>Tacos de Pollo</h3>
+                    <p>Sabrosos tacos con pollo marinado y guacamole.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="sopa.jpg" alt="Sopa de Pollo">
+                    <h3>Sopa de Pollo</h3>
+                    <p>Caliente y reconfortante, perfecta para cualquier momento.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="postre.jpg" alt="Postre de Limón">
+                    <h3>Postre de Limón</h3>
+                    <p>Un final dulce y cítrico para tu comida.</p>
+                </div>
+            </div>
+        </section>
+        <section class="hours">
+    <h2>Horario</h2>
+    <div class="calendar">
+        <div class="day">
+            <h3>Lunes - Viernes</h3>
+            <p>12:00 PM - 10:00 PM</p>
+        </div>
+        <div class="day">
+            <h3>Sábado</h3>
+            <p>11:00 AM - 11:00 PM</p>
+        </div>
+        <div class="day">
+            <h3>Domingo</h3>
+            <p>11:00 AM - 11:00 PM</p>
+        </div>
+    </div>
+</section>
+        <section class="location">
+    <h2>Ubicación</h2>
+    <p>Nos encontramos en el corazón de la ciudad, cerca del Obelisco.</p>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.098805345002!2d-58.381559284768136!3d-34.60373868045954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacdf1ba5637%3A0x6f3e07d0461ef60!2sObelisco%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1690402393742!5m2!1ses!2sar" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+    </main>
+    <footer class="footer">
+        <p>© 2024 Mathias Sanabria, Lion Osuna, Lucas Vargas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
